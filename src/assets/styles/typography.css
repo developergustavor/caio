@@ -1,0 +1,25 @@
+.text-subhead {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.text-paragraph {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary-700 {
+  color: var(--secondary-700);
+}
+
+.text-400 {
+  font-weight: 400;
+}
+
+.text-700 {
+  font-weight: 700;
+}

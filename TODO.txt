@@ -10,7 +10,7 @@
 [x] - arquitetura de software (mindmeister, mural)
 [x] - flowchart
 [x] - github + gist
-[] - git (svn)
+[x] - git (svn)
   - configuração de credenciais para múltiplos usuários (.gitconfig)
   - .gitignore (colocar os nomes dos arquivos ou pastas que não quer fazer upload)
   - .gitkeep (colocar os nomes dos arquivos ou pastas que quer fazer upload)
@@ -26,6 +26,9 @@
   $ git switch *branch_destino* : troca de branch
   $ git pull origin *nome_branch_atual* : atualiza o repositório local de acordo com o branch remoto
 
+  - pull requests: abertura de um "ticket" de revisão de código/alterações visando o controle, estabilidade e organização dos branchs
+  - merge requests: "ticket" de fusão de branchs. Executada automaticamente quando uma pull request é validada
+
   - branchs: 
     - master: branch estável de produção, não pode commitar nele direto
     - dev: branch estável de homologação, não pode commitar nele direto, somente ele comunica com o master
@@ -35,12 +38,30 @@
 [] - criação página html css e js puro
   - figma
   - flexbox
+  - script "defer"
   - p.o.o
     - encapsulamento
     - herança
     - polimorfismo
   - json
+  - dtos (data transfer object)
   - design-pattern
+  - nome de classe: CamelCase
+  - nome de métodos/funções privadas: prefixo com underline
+  - atributos privados javascript: prefixo com #
+  - nome de variáveis:
+    - constantes: UPPERCASE
+    - let ou var:
+      - privadas: prefixo com underline
+      - publicas: pascalCase
+    - nome de arquivo:
+      - classe / model: CamelCase
+      - pages / screens / views: CamelCase
+      - arquivos com nome composto (ex: user_company): snake_case
+      - componentes: kebab-case
+  - arrow function x function
+  - require x import
+  - export x export default x module.exports
   - utilização de métodos com Object
   - utilização de métodos com array + for looping sync
   - operadores lógicos
@@ -48,7 +69,6 @@
   - operadores ternários
   - ?? && ||
   - retorno direto com parênteses
-  - arrow function x function
   - promises
 
 [] - framework frontend (vue e react)
@@ -56,6 +76,7 @@
   - hooks
   - reatividade (computed + watch + reactive)
   - double-bind (v-model)
+  - scss
 
 [] - framework backend (node)
   - express
@@ -108,3 +129,4 @@
 [] - gitlab (ci/cd + pipeline)
 [] - gitbook + historybook + swagger
 [] - README
+[] - php

@@ -1,0 +1,34 @@
+:root {
+  --primary: #172c3c;
+  --primary-100: #2b577a;
+  --primary-200: #244966;
+  --primary-300: #1d3b52;
+  --primary-400: #19354a;
+  --primary-500: #172c3c;
+  --primary-600: #162938;
+  --primary-700: #12222e;
+  --primary-800: #0f1c26;
+  --primary-900: #0b151c;
+  --secondary: #757575;
+  --secondary-50: #f6f6f6;
+  --secondary-70: #f6f6f6;
+  --secondary-100: #eeeeee;
+  --secondary-200: #e2e2e2;
+  --secondary-300: #cbcbcb;
+  --secondary-400: #afafaf;
+  --secondary-500: #757575;
+  --secondary-600: #545454;
+  --secondary-700: #333333;
+  --secondary-800: #1f1f1f;
+  --secondary-900: #141414;
+  --status-success: #2ea043;
+  --status-warning: #bb800a;
+  --status-danger: #f85149;
+  --status-info: #388bfd;
+  --disabled: #e2e2e2;
+  --background-body: #fdfdfd;
+  --pink: #ffc0cb;
+  --bg-card-primary: #e9ecef;
+  --divider-light: #ced4da;
+  --bg-tab-primary: #e1e6e9;
+}
