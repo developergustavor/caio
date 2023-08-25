@@ -3,7 +3,7 @@
   - atalhos:
     - alternar visibilidade do terminal: ctrl + '
     - splittar terminal: ctrl + shift + 5
-    - 
+    - teste
 
 [x] - npm e yarn
 [x] - trello e jira (metodologias ágeis: scrum)
