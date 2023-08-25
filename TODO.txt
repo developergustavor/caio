@@ -1,0 +1,100 @@
+[] - instalação linux + configuração das libs + instalação dos apps + configuração do terminal
+[] - configuração vs code + extensões
+  - atalhos:
+    - alternar visibilidade do terminal: ctrl + '
+    - splittar terminal: ctrl + shift + 5
+    - 
+
+[x] - npm e yarn
+[x] - trello e jira (metodologias ágeis: scrum)
+[x] - arquitetura de software (mindmeister, mural)
+[x] - flowchart
+[x] - github + gist
+[] - git (svn)
+  - configuração de credenciais para múltiplos usuários (.gitconfig)
+  - .gitignore (colocar os nomes dos arquivos ou pastas que não quer fazer upload)
+  - .gitkeep (colocar os nomes dos arquivos ou pastas que quer fazer upload)
+  $ git init: inicializa um repositório LOCAL (offline) vazio na pasta onde rodou o comando (sempre rode na pasta raiz do projeto)
+  $ git remote add origin https://developergustavor@github.com/developergustavor/caio.git : linka o repositório local com o repositório que está no github
+  $ git add . (adiciona os arquivos no repositório local)
+  $ git commit -m "*prefixo (fix, chore, feat, etc)*: *titulo*                                                   
+    ➜ - *topico 1*
+    ➜ - *topico 1*"
+  $ git clone https://developergustavor@github.com/developergustavor/caio.git : clona o repositório para sua máquina local
+
+[] - criação página html css e js puro
+  - figma
+  - flexbox
+  - p.o.o
+    - encapsulamento
+    - herança
+    - polimorfismo
+  - json
+  - design-pattern
+  - utilização de métodos com Object
+  - utilização de métodos com array + for looping sync
+  - operadores lógicos
+  - operadores relacionais
+  - operadores ternários
+  - ?? && ||
+  - retorno direto com parênteses
+  - arrow function x function
+  - promises
+
+[] - framework frontend (vue e react)
+  - componentização
+  - hooks
+  - reatividade (computed + watch + reactive)
+  - double-bind (v-model)
+
+[] - framework backend (node)
+  - express
+  - upload arquivo
+  - postman e insomnia
+  - fetchAPI
+  - axios
+
+[] - banco de dados
+  - lucidchart
+  - dbeaver
+  - sql e nosql
+  - CLI do mysql
+  - pscale
+
+[] - docker
+[] - docker-compose
+
+[] - cache (redis)
+
+[] - websockets
+
+[] - cloud computing (digital ocean)
+  - filezilla
+  - introdução básica linux
+  - configuração servidor node
+  - pm2
+  - cronjob
+
+[] - serverless
+  - explicação arquitetura
+  - deploy
+  - custo R$
+
+[] - roteamento + configuração domínio
+[] - ssl
+
+[] - testes automatizados
+  - e2e
+  - unitário
+  - load
+
+[] - graphql
+
+[] - desenvolvimento mobile (react-native)
+  - desenvolvimento da mesma interface
+  - utilização das mesmas APIs e banco de dados
+
+[] - canvas
+[] - gitlab (ci/cd + pipeline)
+[] - gitbook + historybook + swagger
+[] - README
