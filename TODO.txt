@@ -3,7 +3,7 @@
   - atalhos:
     - alternar visibilidade do terminal: ctrl + '
     - splittar terminal: ctrl + shift + 5
-    - teste
+    - kjshabkjsfabhjkf
 
 [x] - npm e yarn
 [x] - trello e jira (metodologias ágeis: scrum)
@@ -21,6 +21,16 @@
     ➜ - *topico 1*
     ➜ - *topico 1*"
   $ git clone https://developergustavor@github.com/developergustavor/caio.git : clona o repositório para sua máquina local
+  $ git branch --all : listagem dos branchs
+  $ git fetch : syncar seu repositório local com o remoto
+  $ git switch *branch_destino* : troca de branch
+  $ git pull origin *nome_branch_atual* : atualiza o repositório local de acordo com o branch remoto
+
+  - branchs: 
+    - master: branch estável de produção, não pode commitar nele direto
+    - dev: branch estável de homologação, não pode commitar nele direto, somente ele comunica com o master
+    - feat/login-page: branch que o objetivo é criar uma feature de uma tela de login (caio trabalhando nele), somente comunica com o dev
+    - chore/home-page: branch que o objetivo é criar uma feature de uma tela home (gustavo trabalhando nele), somente comunica com o dev
 
 [] - criação página html css e js puro
   - figma
