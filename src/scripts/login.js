@@ -5,9 +5,9 @@ class Schedule {
   userId;
   datetime;
 
-  constructor({ userId, datetime }){
-    this.userId = userId
-    this.datetime = datetime
+  constructor({ userId, datetime }) {
+    this.userId = userId;
+    this.datetime = datetime;
   }
 }
 
@@ -15,24 +15,30 @@ class Schedule {
 class User {
   username;
   #password;
-  #schedules = []
+  #schedules = [];
 
   constructor() {}
 
   // getters / setters
   setUsername(username) {
-    this.username = username
+    this.username = username;
   }
 
   // functions
   createSchedule() {
-
+    const available = this._checkScheduleAvailability(new Date())
+    this.#schedules.push(
+      new Schedule({
+        userId: 1,
+        datetime: new Date(),
+      })
+    );
   }
 
-  _checkScheduleAvailability() {
-
+  _checkScheduleAvailability(datetime) {
+    // this.#schedules.find
   }
 }
 
 const user = new User()
-user.setUsername('Caio')
+user.setUsername("Caio");

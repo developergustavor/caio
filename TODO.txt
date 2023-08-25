@@ -35,7 +35,7 @@
     - feat/login-page: branch que o objetivo é criar uma feature de uma tela de login (caio trabalhando nele), somente comunica com o dev
     - chore/home-page: branch que o objetivo é criar uma feature de uma tela home (gustavo trabalhando nele), somente comunica com o dev
 
-[] - criação página html css e js puro
+[x] - criação página html css e js puro
   - figma
   - flexbox
   - script "defer"
@@ -199,8 +199,39 @@
     - [1,2,3].map(number => {
         return { number }
       })
-      
+
+  - setTimeout
+  - setInterval
+  - callbacks
   - promises
+    - async / await
+
+    - Promises em variável:
+      - await Promise.resolve: aguarda a promise ser resolvida (sucesso)
+      - await Promise.reject: aguarda a promise ser resolvida (erro)
+      * Execução em paralelo (otimização de performance):
+        - await Promise.race: aguarda até a alguma das promises ser resolvida
+        - await Promise.all: aguardar até TODAS as promises serem resolvidas (todas tem que dar sucesso)
+        - await Promise.allSettled: aguardar até TODAS as promises serem resolvidas
+        - Ex:
+          function sleep() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => resolve(), 2000)
+            })
+          }
+
+          function sleep2() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => resolve(), 4000)
+            })
+          }
+
+          console.log('iniciando')
+          await Promise.race([sleep(), sleep2()])
+          // await Promise.all([sleep(), sleep2()])
+          // await Promise.allSettled([sleep(), sleep2()])
+          console.log('acabou')
+
 
 [] - framework frontend (vue e react)
   - componentização
@@ -257,6 +288,8 @@
   - desenvolvimento da mesma interface
   - utilização das mesmas APIs e banco de dados
 
+[] - threads, multi-thread
+[] - streams / webstreams
 [] - canvas
 [] - gitlab (ci/cd + pipeline)
 [] - gitbook + historybook + swagger
