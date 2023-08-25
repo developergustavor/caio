@@ -60,15 +60,146 @@
       - arquivos com nome composto (ex: user_company): snake_case
       - componentes: kebab-case
   - arrow function x function
+    - dentro de uma function vc pode referenciar o this
   - require x import
   - export x export default x module.exports
   - utilização de métodos com Object
   - utilização de métodos com array + for looping sync
+    - find
+    - filter
+    - forEach
+    - map
+    - for
+    - for sync (for of)
+    - while
+    - reduce
+    - some: retorna um boolean (true/false) de acordo com a condição. Condição: se pelo menos 1 dos elementos atender à condição
+    - every: retorna um boolean (true/false) de acordo com a condição. Condição: se todos elementos atender à condição
+    - concat
+
+    - desestruturação:
+      - [...]
+      - const [a] = [1,2,3]: resultado = 1
+      - const a = [1,2,3]: a[0] teria resultado = 1
+
+    - flat: plana arrays aninhados transformando em um array único
+
+  - object assign
+    - copia o prototype, chaves e valores de um objeto sem a referência
+
+  - object freeze
+  - JSON.parse
+  - JSON.stringify
+
+  - set: estrutura de dados que vai juntar somente dados que não sejam repetidos baseados em uma condição (distinct)
+      var persons1 = ['caio', 'gustavo', 'caio']
+      console.log(new Set(person1))
+
+      var persons2 = [{ id: 1, name: 'caio' }, { id: 1, name: 'gustavo' }, { id: 2, name: 'caio' }]
+      console.log(new Set(Object.entries(persons2).map(([key, value]) => value.name)))
+      console.log(new Set(Object.entries(persons2).map(([key, value]) => value.id)))
+
+  - type casting:
+    - JSON.parse: converte json stringfied para json
+    - eval: converte array de string para array mesmo
+    - Number() ou perfixo +: converte string para numero: Ex: +'2' ou Number('2')
+    - String(): converte para string: Ex: String(2)
+    - Boolean(): converte para booleano: 
+      - Boolean(1) = true
+      - Boolean(0) = false
+      - Boolean('sakgfna') = true
+      - Boolean('') = false
+      - Boolean(null) = false
+      - Boolean(undefined) = false
+      - !!1 = true
+      - !!0 = false
+      - !!true = true
+      - !!false = false
+      - !!'jkbfasjk' = true
+      - !!'' = false
+      - !!null = false
+      - !!undefined = false
+
   - operadores lógicos
+    - +
+    - -
+    - /
+    - *
+    - **
+    - %
+    - parenteses
+    - =
+    - +=
+    - -=
+    - /=
+    - etc
+
   - operadores relacionais
+    - >=
+    - >
+    - <=
+    - == compara valor
+    - === compara tipo e valor
+    - != compara valor
+    - !== compara tipo e valor
+    - etc
+
   - operadores ternários
-  - ?? && ||
+    - ex:
+      if(a == 1) return true
+      else return false
+
+      // utilizando ternário
+      return a == 1 ? true : false
+
+  - operador &&: encurtador de ifs (se atender à condição, executa)
+    function teste() {
+      console.warn('teste')
+    }
+
+    var a = true
+    // opções:
+    // a == true && teste()
+    // if(a == true) teste()
+    // a && teste()
+    // !!a && teste()
+    // if(a) teste()
+    // if(!!a) teste()
+
+  - operador ||: realiza o lado direito da expressão caso o lado esquerdo seja false
+    function teste() {
+      console.warn('teste')
+    }
+
+    function teste2() {
+        console.warn('teste2')
+    }
+
+    // var a = false
+    // a || teste2() // chama o teste2
+
+    // var a = true
+    // a || teste2() // não chama o teste2
+
+    // var a = false
+    // a && teste() || teste2()
+    
+  - operador ??: retorna o valor da direita caso o valor da esquerda seja null ou undefined
+    - if(a == undefined || a == null) retorna 'teste'
+      // é a mesma coisa de:
+      // a ?? 'teste'
+
   - retorno direto com parênteses
+    - [1,2,3].map(number => (number)) é a mesma coisa de:
+      - [1,2,3].map(number => {
+        return number
+      })
+
+    - [1,2,3].map(number => ({ number })) é a mesma coisa de
+    - [1,2,3].map(number => {
+        return { number }
+      })
+      
   - promises
 
 [] - framework frontend (vue e react)
@@ -91,6 +222,7 @@
   - sql e nosql
   - CLI do mysql
   - pscale
+  - enum
 
 [] - docker
 [] - docker-compose

@@ -1,23 +1,38 @@
 "use strict";
 
+// dtos/models/Schedule.js
+class Schedule {
+  userId;
+  datetime;
 
-
-
-export class User {
-  username = "teste";
-  #password;
-
-  constructor(props) {
-    super(props);
-  }
-
-  setName = (name) => {
-    // function x arrow function:
-    // dentro de uma function vc pode referenciar o this
-    console.log(this.username);
-  };
-
-  setName(name) {
-    console.log(this.username);
+  constructor({ userId, datetime }){
+    this.userId = userId
+    this.datetime = datetime
   }
 }
+
+// dtos/models/User.js
+class User {
+  username;
+  #password;
+  #schedules = []
+
+  constructor() {}
+
+  // getters / setters
+  setUsername(username) {
+    this.username = username
+  }
+
+  // functions
+  createSchedule() {
+
+  }
+
+  _checkScheduleAvailability() {
+
+  }
+}
+
+const user = new User()
+user.setUsername('Caio')
